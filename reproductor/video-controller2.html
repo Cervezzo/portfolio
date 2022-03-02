@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reproductor</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript.js"></script>
+</head>
+
+<body>
+
+    <div id="container">
+
+        <figure>
+            <video width="100px" height="400px" id="video" src="resources/video.mp4">
+            </video>
+            <figcaption>
+                <progress class="item1" id="progreso" max="100" value="0">progreso</progress>
+                <label class="item2" id="tiempo" for="progress" role="timer">0 segundos</label>
+                <button class="item3" id="skipMenos">&lt;&lt;</button>
+                <button class="item4" id="play" aria-label="Play" role="button">&#x25BA;</button>
+                <button class="item5" id="stop">&#9726;</button>
+                <button class="item6" id="skipMas">&gt;&gt;</button>
+                <button class="item7" id="maximizar"><img src="resources/maximizar16px.png"
+                        alt="icono maximizar"></button>
+            </figcaption>
+        </figure>
+        <span style="display: none;">
+            <!-- flaticon maximizar -->
+            <a href="https://www.flaticon.es/iconos-gratis/maximizar" title="maximizar iconos">Maximizar iconos creados
+                por th studio - Flaticon</a>
+        </span>
+    </div>
+
+</body>
+
+</html>

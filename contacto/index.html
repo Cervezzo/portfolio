@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript.js"></script>
+</head>
+
+<body>
+    <div id="boxPadre">
+        <h1 id="titulo">Contacte con nosotros</h1>
+        <form id="form1">
+            <label for="email">Email</label>
+            <br>
+            <input type="text" name="email" id="email" placeholder="Introduzca su email"
+                pattern="^\w+([\.-]?\w+)*@[aA-zZ]+([\.-]?[aA-zZ]+)*(\.)+(com|net|es|org)+$" required>
+            <br>
+            <span id="emailCorrecto"></span>
+            <br>
+            <label for="telf">Número de teléfono</label>
+            <br>
+            <input type="text" name="telf" id="telf" placeholder="666555888" pattern="[0-9]{9}">
+            <br>
+            <textarea name="textarea" id="textarea" cols="60" rows="10" placeholder="Texto del email"
+                required></textarea>
+            <br>
+            <input type="checkbox" name="legal" id="legal" required>
+            <label for="legal">He leído y aceptado el <a href="#">aviso legal</a></label>
+            <br>
+            <input type="checkbox" name="personales" id="personales" required>
+            <label for="personales">Envío de mis datos personales</label>
+            <br>
+            <input type="submit" value="Enviar" id="enviar">
+        </form>
+    </div>
+    <div id="cargando">
+        <img src="images/loading-load.png" alt="cargar">
+    </div>
+    <div id="confirmacion">
+        <p>Su solicitud ha sido enviada, en breve le contestaremos al email facilitado.</p>
+        <input id="btnConfirm" type="button" value="Aceptar">
+    </div>
+
+    <div class="aviso-cookies" id="aviso-cookies">
+		<img src="images/monstruo-cookies.png" alt="monstruo de las Cookies">
+        <h3 class="titulo">Cookies</h3>
+		<p class="textCookies">Utilizamos cookies propias y de terceros para mejorar nuestros servicios.</p>
+        <input type="button" id="aceptCookies" value="Acepto">
+		<a class="enlace" href="#">Aviso de Cookies</a>
+	</div>
+    
+</body>
+
+</html>

@@ -1,0 +1,162 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+#boxPadre {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+input,
+label,
+textarea,
+span {
+    margin: 10px;
+    border-radius: 4px;
+}
+
+span {
+    font-size: 12px;
+}
+
+#email,
+#textarea,
+#enviar {
+    width: 450px;
+
+}
+
+#enviar {
+    background-color: rgba(139, 91, 184, 0.918);
+    height: 30px;
+    width: 460px;
+}
+
+#titulo {
+    color: black;
+    justify-self: end;
+    margin-left: 0;
+}
+
+/* rotación imagen */
+#cargando {
+    position: absolute;
+    margin:auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 0px;
+    height: 0px;
+    
+    
+}
+
+#cargando img {
+
+    margin: auto;
+    animation: rotation 2s infinite linear;
+    width: 50px;
+    height: 50px;
+    
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+  /* Confirmacion */
+  #confirmacion{
+    visibility: hidden;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 300px;
+    height: 100px;
+    border-radius: 4px;
+    padding: 10px;
+    border: 1px solid black;
+  }
+
+  #confirmacion input{
+      margin: auto;
+      background-color: rgba(139, 91, 184, 0.918);
+      margin-top: 10px;
+
+  }
+
+
+  /* COOKIE */
+
+  .aviso-cookies {
+	display: none;
+	background: rgb(238, 233, 209);
+	padding: 20px;
+	width: calc(100% - 40px);
+	max-width: 300px;
+	line-height: 150%;
+	border-radius: 10px;
+	position: fixed;
+	bottom: 20px;
+	left: 20px;
+	z-index: 9999;
+	box-shadow: 0px 2px 20px 10px rgba(219, 188, 188, 0.288);
+	text-align: center;
+}
+
+.aviso-cookies .titulo,
+.aviso-cookies .textCookies {
+	margin-bottom: 15px;
+}
+
+
+
+
+.aviso-cookies .enlace {
+	color: #4DBFFF;
+	text-decoration: none;
+	font-size: 14px;
+}
+
+.aviso-cookies .enlace:hover {
+	text-decoration: underline;
+}
+
+.aviso-cookies img{
+    width: 100px;
+}
+
+.aviso-cookies input{
+    width: 100px;
+    height: 30px;
+    background-color: rgba(139, 91, 184, 0.918);
+    font-weight: bold;
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    
+}
+
+.aviso-cookies input:hover{
+    
+    cursor:pointer; 
+    background-color: rgba(117, 76, 156, 0.918);
+}
+
+#cargando{
+    display: none;
+}
