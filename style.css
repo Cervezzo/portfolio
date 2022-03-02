@@ -1,0 +1,157 @@
+body {
+  margin: 0;
+}
+
+.link-nav, .link-footer{
+  text-decoration:none ;
+  color: aliceblue;
+}
+
+.link-nav:hover, .link-footer:hover{
+  color: #ffc107;
+}
+
+
+
+/* animacion para que aparezca y desaparezca el botón de volver arriba de forma fluida */
+/* hacemos que desaparezca */
+.boton_volver {
+  width: 50px;
+  position: fixed;
+  height: 50px;
+  z-index: 1;
+  bottom: 10px;
+  right: 10px;
+  display: none;
+  animation: desaparecer 4s both;
+  animation-delay: 3s;
+  transition: opacity 1s;
+}
+
+/* .boton_noche {
+  width: 50px;
+  position: fixed;
+  height: 50px;
+  z-index: 1;
+  top: 10px;
+  right: 10px;
+  
+
+} */
+
+/* Modo nocturno stilos*/
+.container-btn-mode{
+  position: fixed;
+  top:20vh;
+  right: 30px;
+  cursor: pointer;
+  z-index: 2;
+  font-size:0;
+}
+
+.active{
+  background-color:black;
+  color:#ffcd5c !important;
+}
+
+
+.dark-mode{
+  background-color: #0e0e0e;
+  transition:all .5s;
+  color: aliceblue;
+}
+.dark-mode .card{
+  background-color: #1A1C1E;
+}
+.dark-mode h1, .dark-mode h2,.dark-mode h3, .dark-mode h4, .dark-mode h5, .dark-mode .btn-contact{
+  color:white;
+}
+.dark-mode .btn-mode{
+  background-color:#1A1C1E;
+  border:1px solid white;
+  color:white;
+}
+
+/* fin modo nocturno */
+@keyframes desaparecer {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  50% {
+    visibility: hidden;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+
+
+
+/* hacemos que aparezca si nos posamos sobre el boton de subir*/
+.boton_volver:hover {
+  opacity: 1;
+  visibility: visible;
+  animation: aparecer 0s both;
+
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  50% {
+    visibility: visible;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+
+/* efecto flash, no funka */
+
+/* #contactoBtn {
+  
+  animation: flash 1s infinite;
+  
+} */
+/* 
+.largo{
+  max-width: 500px;
+}
+
+#contacto{
+  
+  transform: translate(0vh);
+  -webkit-transition: all .2s ease-out;
+  -moz-transition: all .2s ease;
+  transition:all .2s ease-in;
+  visibility: hidden;
+}
+
+
+@-webkit-keyframes flash {
+  0%, 50%, 100% {opacidad: 1; }
+  25%, 75% {opacidad: 0; }
+ }
+
+ @keyframes flash {
+  0%, 50%, 100% {opacidad: 1; }
+  25%, 75% {opacidad: 0; }
+ }
+
+ @-moz-keyframes flash {
+  0%, 50%, 100% {opacidad: 1; }
+  25%, 75% {opacidad: 0; }
+ }
+
+  */
