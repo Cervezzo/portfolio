@@ -53,7 +53,9 @@ body {
   background-color:black;
   color:#ffcd5c !important;
 }
-
+.fa-burger{
+color: #ffc107 !important;
+}
 
 .dark-mode{
   background-color: #0e0e0e;
